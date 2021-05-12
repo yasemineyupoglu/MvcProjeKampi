@@ -97,3 +97,5 @@ C:\Users\HP\Projects\MvcProjeKampi\MvcProjeKampi\bin\EntityLayer.dll.config
 C:\Users\HP\Projects\MvcProjeKampi\MvcProjeKampi\bin\EntityFramework.xml
 C:\Users\HP\Projects\MvcProjeKampi\MvcProjeKampi\bin\EntityFramework.SqlServer.dll
 C:\Users\HP\Projects\MvcProjeKampi\MvcProjeKampi\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Projects\MvcProjeKampi\MvcProjeKampi\bin\FluentValidation.dll
+C:\Users\HP\Projects\MvcProjeKampi\MvcProjeKampi\bin\FluentValidation.xml

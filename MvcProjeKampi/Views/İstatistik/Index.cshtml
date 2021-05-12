@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<div class="card-deck">
+    <div class="card text-white bg-primary mb-4 " style="max-width: 20rem;">
+        <div class="card-header"></div>
+        <div class="card-body">
+            <h1 class="card-text"> @ViewBag.CategoryCount</h1>
+            <h5 class="card-title">Toplam Kategori Sayısı</h5>
+        </div>
+    </div>
+    <div class="card text-white bg-secondary mb-4 " style="max-width: 20rem;">
+        <div class="card-header"></div>
+        <div class="card-body">
+            <h1 class="card-text"> @ViewBag.Heading</h1>
+            <h5 class="card-title">Yazılım Kategorisine Ait Başlık Sayısı</h5>
+        </div>
+    </div>
+    <div class="card text-white bg-primary mb-4 " style="max-width: 20rem; ">
+        <div class="card-header"></div>
+        <div class="card-body">
+            <h1 class="card-text"> @ViewBag.Writer</h1>
+            <h5 class="card-title">Yazar Adında "a" Harfi Bulunanlar</h5>
+        </div>
+    </div>
+</div>
+<div class="card-deck">
+    <div class="card text-white bg-secondary mb-6 " style="max-width: 20rem;">
+        <div class="card-header"></div>
+        <div class="card-body">
+            <h1 class="card-text"> @ViewBag.HeadingMax</h1>
+            <h5 class="card-title">En Fazla Başlığa Sahip Olan Kategori Adı</h5>
+        </div>
+    </div>
+    <div class="card text-white bg-primary mb-6 " style="max-width: 20rem; height:auto">
+        <div class="card-header"></div>
+        <div class="card-body">
+            <h1 class="card-text"> @ViewBag.StatusFark</h1>
+            <h5 class="card-title">Kategori Tablosunda Durumu True Olan ile False Olan Kategoriler Arasındaki Sayısal Fark</h5>
+        </div>
+    </div>
+</div>
+

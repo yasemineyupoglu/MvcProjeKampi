@@ -16,3 +16,5 @@ C:\Users\HP\Projects\MvcProjeKampi\BusinessLayer\bin\Debug\EntityLayer.dll.confi
 C:\Users\HP\Projects\MvcProjeKampi\BusinessLayer\bin\Debug\EntityFramework.xml
 C:\Users\HP\Projects\MvcProjeKampi\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\HP\Projects\MvcProjeKampi\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\HP\Projects\MvcProjeKampi\BusinessLayer\bin\Debug\FluentValidation.dll
+C:\Users\HP\Projects\MvcProjeKampi\BusinessLayer\bin\Debug\FluentValidation.xml
