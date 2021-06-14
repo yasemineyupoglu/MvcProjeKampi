@@ -13,5 +13,3 @@ C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.csp
 C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
 C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
-C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig1.resources
-C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
