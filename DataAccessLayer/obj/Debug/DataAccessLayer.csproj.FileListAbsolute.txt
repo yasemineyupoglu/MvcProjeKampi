@@ -8,8 +8,10 @@ C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\bin\Debug\EntityLayer.pdb
 C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\bin\Debug\EntityLayer.dll.config
 C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\bin\Debug\EntityFramework.xml
 C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
 C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
 C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_role.resources
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache

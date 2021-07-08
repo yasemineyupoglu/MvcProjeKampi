@@ -1,0 +1,17 @@
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\bin\Release\DataAccessLayer.dll.config
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\bin\Release\DataAccessLayer.dll
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\bin\Release\DataAccessLayer.pdb
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\bin\Release\EntityFramework.dll
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\bin\Release\EntityLayer.dll
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\bin\Release\EntityLayer.pdb
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\bin\Release\EntityLayer.dll.config
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\bin\Release\EntityFramework.xml
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Release\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Release\DataAccessLayer.Migrations.mig_role.resources
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Release\DataAccessLayer.csproj.GenerateResource.cache
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Release\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Release\DataAccessLayer.csproj.CopyComplete
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Release\DataAccessLayer.dll
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Release\DataAccessLayer.pdb

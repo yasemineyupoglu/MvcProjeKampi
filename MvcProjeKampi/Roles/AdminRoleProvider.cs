@@ -1,7 +1,10 @@
-﻿using DataAccessLayer.Concrete;
+﻿using BusinessLayer.Concrete;
+using DataAccessLayer.Concrete;
+using DataAccessLayer.EntityFramewrok;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.Security;
 
@@ -39,8 +42,21 @@ namespace MvcProjeKampi.Roles
         public override string[] GetRolesForUser(string username)
         {
             Context c = new Context();
-            var x = c.Admins.FirstOrDefault(y => y.AdminUserName == username);
-            return new string[] { x.AdminRole };
+            var x = c.Admins.Where(y => y.AdminUserName == username).FirstOrDefault();
+            var resultWriter = c.Writers.FirstOrDefault(d => d.WriterMail == username);
+
+            if (x != null)
+            {
+                return new string[] { x.AdminRole };
+            }
+            else if (resultWriter != null)
+            {
+                return new string[] { resultWriter.WriterRole };
+            }
+            return new string[] { };
+            //Context c = new Context();
+            //var x = c.Admins.FirstOrDefault(y => y.AdminUserName == username);
+            //return new string[] { x.AdminRole };
         }
 
         public override string[] GetUsersInRole(string roleName)

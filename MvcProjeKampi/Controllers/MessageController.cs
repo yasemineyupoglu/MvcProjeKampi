@@ -18,15 +18,15 @@ namespace MvcProjeKampi.Controllers
         MessageManager mm = new MessageManager(new EfMessageDal());
         MessageValidator messageValidator = new MessageValidator();
 
-        public ActionResult Inbox()
+        public ActionResult Inbox(string p)
         {
-            var messageList = mm.GetListInbox();
+            var messageList = mm.GetListInbox(p);
             return View(messageList);
         }
 
-        public ActionResult Sendbox()
+        public ActionResult Sendbox(string p)
         {
-            var messageList = mm.GetListSendbox();
+            var messageList = mm.GetListSendbox(p);
             return View(messageList);
         }
 
@@ -92,9 +92,9 @@ namespace MvcProjeKampi.Controllers
             }
             return View();
          }
-        public ActionResult Draft()
+        public ActionResult Draft(string p)
         {
-            var sendList = mm.GetListSendbox();
+            var sendList = mm.GetListSendbox(p);
             var draftList = sendList.FindAll(x => x.isDraft == true);
             return View(draftList);
         }
