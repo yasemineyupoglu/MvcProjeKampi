@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Security.Cryptography;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
@@ -19,7 +21,7 @@ namespace MvcProjeKampi.Controllers
     {
         WriterLoginManager wm = new WriterLoginManager(new EfWriterDal());
 
-        private AdminManager manager = new AdminManager(new EfAdminDal());
+        AdminLoginManager adminmanager = new AdminLoginManager(new EfAdminDal());
 
         [HttpGet]
         public ActionResult Index()
@@ -30,18 +32,23 @@ namespace MvcProjeKampi.Controllers
         [HttpPost]
         public ActionResult Index(Admin admin)
         {
-            string sifre1 = Sifrele.MD5Olustur(admin.AdminPassword);
-            var adminValues = manager.GetList().Where(x => x.AdminUserName == admin.AdminUserName && x.AdminPassword == sifre1).FirstOrDefault();
-            if (adminValues != null)
+            SHA1 sha1 = new SHA1CryptoServiceProvider();
+            string password = admin.AdminPassword;
+            string result = Convert.ToBase64String(sha1.ComputeHash(Encoding.UTF8.GetBytes(password)));
+            admin.AdminPassword = result;
+
+            //Context c = new Context();
+            //var adminuserinfo = c.Admins.FirstOrDefault(x => x.AdminUserName == p.AdminUserName && x.AdminPassword == p.AdminPassword);
+            var adminuserinfo = adminmanager.GetAdmin(admin.AdminUserName, admin.AdminPassword);
+
+            if (adminuserinfo != null)
             {
-                FormsAuthentication.SetAuthCookie(admin.AdminUserName, false);
-                Session["AdminUserName"] = adminValues.AdminUserName;
+                FormsAuthentication.SetAuthCookie(adminuserinfo.AdminUserName, false);
+                Session["AdminUserName"] = adminuserinfo.AdminUserName;
                 return RedirectToAction("Index", "AdminCategory");
             }
-            else
-            {
-                return RedirectToAction("Index");
-            }
+            ViewBag.ErrorMessage = "Kullanıcı Adı veya Şifre Yanlış";
+            return View();
         }
 
         [HttpGet]
@@ -54,7 +61,7 @@ namespace MvcProjeKampi.Controllers
         public ActionResult WriterLogin(Writer p)
         {
             var response = Request["g-recaptcha-response"];
-            const string secret = "6LfHFTwbAAAAAB53V5ZcixAgVCi2aTXIuF-eLxF9";
+            const string secret = "6LcXqIgbAAAAAGIoxEbQJx4O-c2LcZklg4Kzu--5";
             var client = new WebClient();
 
             var reply = client.DownloadString(string.Format("https://www.google.com/recaptcha/api/siteverify?secret={0}&response={1}", secret, response));
