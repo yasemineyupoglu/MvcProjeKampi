@@ -38,6 +38,8 @@ namespace MvcProjeKampi.Controllers
             ValidationResult results = writerValidation.Validate(p);
             if (results.IsValid)
             {
+                p.WriterStatus = true;
+                p.WriterRole = "A";
                 wm.WriterUpdate(p);
                 return RedirectToAction("AllHeading", "WriterPanel");
             }

@@ -13,6 +13,7 @@ namespace MvcProjeKampi.Controllers
     {
         // GET: Authorization
         YöneticiManager ym = new YöneticiManager(new EfYöneticiDal());
+        RoleManager roleManager = new RoleManager(new EfRoleDal());
         public ActionResult Index()
         {
             var yöneticivalues = ym.GetList();
@@ -35,16 +36,25 @@ namespace MvcProjeKampi.Controllers
         [HttpGet]
         public ActionResult EditAdmin(int id)
         {
+            List<SelectListItem> valueadminrole = (from c in roleManager.GetRoles()
+                                                   select new SelectListItem
+                                                   {
+                                                       Text = c.RoleName,
+                                                       Value = c.RoleId.ToString()
+
+                                                   }).ToList();
+
+            ViewBag.valueadmin = valueadminrole;
+
             var adminvalue = ym.GetById(id);
             return View(adminvalue);
         }
-
         [HttpPost]
-        public ActionResult EditAdmin(Admin p)
+        public ActionResult EditAdmin(Admin admin)
         {
-            ym.YöneticiUpdate(p);
+            admin.AdminStatus = true;
+            ym.YöneticiUpdate(admin);
             return RedirectToAction("Index");
-
         }
     }
 }

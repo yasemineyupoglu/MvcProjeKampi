@@ -15,3 +15,6 @@ C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Release\DataAccessLayer.c
 C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Release\DataAccessLayer.csproj.CopyComplete
 C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Release\DataAccessLayer.dll
 C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Release\DataAccessLayer.pdb
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Release\DataAccessLayer.Migrations.mig_roles.resources
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Release\DataAccessLayer.Migrations.mig_admini.resources
+C:\Users\HP\Projects\MvcProjeKampi\DataAccessLayer\obj\Release\DataAccessLayer.Migrations.mig1_addtm.resources
